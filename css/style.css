@@ -77,6 +77,8 @@ a {
 .accommodations-title{
   grid-column-start: 1;
     grid-column-end: 4;
+    font-weight: bold;
+    font-size: 22px;;
 }
 
 .accommodations-image{
@@ -90,33 +92,9 @@ a {
   border-top-right-radius: inherit;
 }
 
-/* .accommodations-name{
-  grid-row: 2;
-  max-width: inherit;
-  max-height: inherit;
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
+.accommodations-name{
+  font-weight: bold;
 }
-
-.price-info{
-  grid-row: 3;
-  max-width: inherit;
-  max-height: inherit;
-  width: 150px;
-  height: inherit;
-  object-fit: contain;
-}
-
-.rating{
-  grid-row: 4;
-  max-width: inherit;
-  max-height: inherit;
-  width: 150px;
-  height: inherit;
-  object-fit: contain;
-}
-   */
 
 
 .most-popular{
@@ -146,7 +124,7 @@ a {
   padding: 4px;
   height: 80%;
   width: inherit;
-  
+  grid-row: 2;
 }
 
 .popular-image{
@@ -331,7 +309,7 @@ flex-basis: 33.333333%;
 }
 
 .btn {
-  border-radius: 25px;
+  border-radius: 100px;
   border-color: #f2f2f2;
   padding: 12px 16px;
   background-color: white;
@@ -354,7 +332,7 @@ flex-basis: 33.333333%;
   color: grey
 }
 
-.gggg{
+.btn-icon{
   border-radius: inherit;
   background-color:#DEEBFF;
   padding: 15px;
@@ -367,14 +345,17 @@ flex-basis: 33.333333%;
   font-weight: bold;
 }
 
-.bbbb{
+.info-icon {
   border-radius: 50%;
    border-width: thin;  
    border: solid  #f2f2f2;
   align-self: center;
-  padding: 15px;
-  align-items: left;
+  padding-top: 5px;
   color: #0065FC;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  text-align: center;
 }
 
 #first-line{

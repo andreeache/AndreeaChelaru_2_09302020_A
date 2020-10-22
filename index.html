@@ -12,8 +12,8 @@
 
     <nav>
         <div class="navmenu">
-            <a href>Accommodation </a>
-            <a href>Activities</a>
+            <a href="#anchor-accomodations">Accommodation </a>
+            <a href="#anchor-activities">Activities</a>
             <a href>Sign up</a>
         </div>
         <img alt="Logo" src="images/logo/Reservia.svg" width="100" height="50">
@@ -24,8 +24,8 @@
         <br>
         <p2>Downtown or in nature</p2>
         <br>
+        <span class="fas fa-map-marker-alt marker-point" style="float:left;"></span>
         <form class="button" action="action_page.php">
-            <i class="fas fa-map-marker-alt"></i>
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"> Search </i></button>
         </form>
@@ -36,91 +36,94 @@
     <section class="myBtnContainer">
         <p>Filters</p>
         <button class="btn active" onclick="filterSelection('low_cost')">
-            <i class='gggg fas fa-money-bill-wave' style='font-size:15px'></i> Low cost
+            <i class='btn-icon fas fa-money-bill-wave' style='font-size:15px'></i> Low cost
         </button>
         <button class="btn" onclick="filterSelection('family-friendly')">
-            <i class="gggg fas fa-child" style='font-size:15px'></i> Family Friendly</button>
+            <i class="btn-icon fas fa-child" style='font-size:15px'></i> Family Friendly</button>
         <button class="btn" onclick="filterSelection('romantic')">
-            <i class="gggg fas fa-heart" style='font-size:15px'></i> Romantic</button>
+            <i class="btn-icon fas fa-heart" style='font-size:15px'></i> Romantic</button>
         <button class="btn" onclick="filterSelection('pets_allowed')">
-            <i class="gggg fas fa-dog" style='font-size:15px'></i> Pets Allowed</button>
+            <i class="btn-icon fas fa-dog" style='font-size:15px'></i> Pets Allowed</button>
     </section>
 
     <br>
-    <p3> <i class=" bbbb fas fa-info"></i> More than 500 accommodations are available in this city</p3>
+    <p3> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3>
 
 
     <section class="main-section">
-        <div class="accommodations">
+        <div class="accommodations" id="anchor-accomodations">
             <div class="accommodations-title">Accommodations in Marseille</div>
             <a href="">
-            <div class="accommodations-section">
-                <picture class="accommodations-image">
-                    <source srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                        media="(min-width: 600px)">
-                    <img class="accommodations-image"
-                        src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=Hotel Cannebiere>
-                </picture>
+                <div class="accommodations-section">
+                    <picture class="accommodations-image">
+                        <source srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            media="(min-width: 600px)">
+                        <img class="accommodations-image"
+                            src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=Hotel Cannebiere>
+                    </picture>
 
-                <div class="accommodations-name">Auberge la Cannebière</div>
-                <div class="price-info">Night starting at 25€</div>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star uncheked"></span>
+                    <div class="accommodations-name">Auberge la Cannebière</div>
+                    <div class="price-info">Night starting at 25€</div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star uncheked"></span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <a href="">
-            <div class="accommodations-section">
-                <picture class="accommodations-image">
-                    <source srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                        media="(min-width: 600px)">
-                    <img class="accommodations-image"
-                        src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
-                </picture>
-                <div class="accommodations-name">Hôtel du port</div>
-                <div class="price-info">Night starting at 52€</div>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+                <div class="accommodations-section">
+                    <picture class="accommodations-image">
+                        <source srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                            media="(min-width: 600px)">
+                        <img class="accommodations-image"
+                            src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                    </picture>
+                    <div class="accommodations-name">Hôtel du port</div>
+                    <div class="price-info">Night starting at 52€</div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <a href="">
-            <div class="accommodations-section">
-                <picture class="accommodations-image">
-                    <source srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="accommodations-image"
-                        src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel">
-                </picture>
-                <div class="accommodations-name">Les mouettes Hotel</div>
-                <div class="price-info">Night starting at 76€</div>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star uncheked"></span>
+                <div class="accommodations-section">
+                    <picture class="accommodations-image">
+                        <source srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="accommodations-image"
+                            src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                            alt="Les mouettes Hotel">
+                    </picture>
+                    <div class="accommodations-name">Les mouettes Hotel</div>
+                    <div class="price-info">Night starting at 76€</div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star uncheked"></span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <a href="">
-            <div class="accommodations-section">
-                <picture class="accommodations-image">
-                    <source srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="accommodations-image"
-                        src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
+                <div class="accommodations-section">
+                    <picture class="accommodations-image">
+                        <source srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="accommodations-image"
+                            src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                            alt="Hotel de la mer">
+                    </picture>
                     <div class="accommodations-name">Hôtel de la mer</div>
                     <div class="price-info">Night starting at 46€</div>
                     <div class="rating">
@@ -130,49 +133,50 @@
                         <span class="fa fa-star uncheked"></span>
                         <span class="fa fa-star uncheked"></span>
                     </div>
-            </div>
-        </a>
+                </div>
+            </a>
 
             <a href="">
-            <div class="accommodations-section">
-                <picture class="accommodations-image">
-                    <source srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="accommodations-image"
-                        src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
-                </picture>
-                <div class="accommodations-name">Auberge Le Panier</div>
-                <div class="price-info">Night starting at 23€</div>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star uncheked"></span>
+                <div class="accommodations-section">
+                    <picture class="accommodations-image">
+                        <source srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="accommodations-image"
+                            src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            alt="Auberge Le Panier">
+                    </picture>
+                    <div class="accommodations-name">Auberge Le Panier</div>
+                    <div class="price-info">Night starting at 23€</div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star uncheked"></span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <a href="">
-            <div class="accommodations-section">
-                <picture class="accommodations-image">
-                    <source srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash"
-                        media="min-width: 600px">
-                    <img class="accommodations-image"
-                        src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                        alt="Hotel chez Amina">
-                </picture>
-                <div class="accommodations-name">Hôtel chez Amina</div>
-                <div class="price-info">Night starting at 96€</div>
-                <div class="rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
+                <div class="accommodations-section">
+                    <picture class="accommodations-image">
+                        <source srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash"
+                            media="min-width: 600px">
+                        <img class="accommodations-image"
+                            src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                            alt="Hotel chez Amina">
+                    </picture>
+                    <div class="accommodations-name">Hôtel chez Amina</div>
+                    <div class="price-info">Night starting at 96€</div>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <div class="show-more"><a href="">Show more</a></div>
         </div>
@@ -181,71 +185,72 @@
             <div class="most-popular-title">Most Popular</div>
 
             <a href="">
-            <div class="popular-section" style="grid-row: 2;">
-                <picture class="popular-image">
-                    <source srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="popular-image"
-                        src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                        alt="Morning Sun Hotel">
-                </picture>
-                <div class="popular-text">
-                    <div class="popular-name">Morning Sun Hotel</div>
-                    <div>Night starting at 128€</div>
-                    <div class="popular-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
+                <div class="popular-section">
+                    <picture class="popular-image">
+                        <source srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="popular-image"
+                            src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Morning Sun Hotel">
+                    </picture>
+                    <div class="popular-text">
+                        <div class="popular-name">Morning Sun Hotel</div>
+                        <div>Night starting at 128€</div>
+                        <div class="popular-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <a href="">
-            <div class="popular-section">
-                <picture class="popular-image">
-                    <source srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="popular-image" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                        alt="Au coeur de l'eau Bed and breakfast">
-                </picture>
-                <div class="popular-text">
-                    <div class="popular-name">Au coeur de l'eau Bed and breakfast</div>
-                    <div>Night starting at 71€</div>
-                    <div class="popular-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star uncheked"></span>
+                <div class="popular-section">
+                    <picture class="popular-image">
+                        <source srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="popular-image"
+                            src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            alt="Au coeur de l'eau Bed and breakfast">
+                    </picture>
+                    <div class="popular-text">
+                        <div class="popular-name">Au coeur de l'eau Bed and breakfast</div>
+                        <div>Night starting at 71€</div>
+                        <div class="popular-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star uncheked"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
 
             <a href="">
-            <div class="popular-section">
-                <picture class="popular-image">
-                    <source srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="popular-image"
-                        src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                        alt="Tout bleu et Blanc Hotel">
-                </picture>
-                <div class="popular-text">
-                    <div class="popular-name">Tout bleu et Blanc Hotel</div>
-                    <div>Night starting at 68€</div>
-                    <div class="popular-rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star uncheked"></span>
+                <div class="popular-section">
+                    <picture class="popular-image">
+                        <source srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="popular-image"
+                            src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                            alt="Tout bleu et Blanc Hotel">
+                    </picture>
+                    <div class="popular-text">
+                        <div class="popular-name">Tout bleu et Blanc Hotel</div>
+                        <div>Night starting at 68€</div>
+                        <div class="popular-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star uncheked"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
             </a>
         </div>
 
@@ -256,7 +261,7 @@
 
 
 
-    <section class="activities">
+    <section class="activities" id="anchor-activities">
         <div class="activities-title">Activities in Marseille</div>
 
         <picture class="long-image first-column image-fit-grid">
@@ -306,7 +311,7 @@
 
         <section class="footer">
             <div class="footer-bold"> <a href> About</a></div>
-            <div class="footer-bold"> <a href="">Our Accommodation</a></div>
+            <div class="footer-bold"> <a href="#anchor-accomodations">Our Accommodation</a></div>
             <div class="footer-bold"> <a href=""> Assistance</a> </div>
             <div class="footer-regular"> <a href="">Site map</a></div>
             <div class="footer-regular"> <a href="">Quality assessment</a></div>
