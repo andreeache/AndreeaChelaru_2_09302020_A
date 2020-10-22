@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 
 <body>
@@ -19,12 +20,12 @@
     </nav>
 
     <section>
-        <p1>Find a place for your dream vacation</p1>
+        <p1 id="first-line">Find a place for your dream vacation</p1>
         <br>
         <p2>Downtown or in nature</p2>
         <br>
         <form class="button" action="action_page.php">
-            <i style="font-size:24px" class="fa">&#xf041;</i>
+            <i class="fas fa-map-marker-alt"></i>
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"> Search </i></button>
         </form>
@@ -34,20 +35,25 @@
 
     <section class="myBtnContainer">
         <p>Filters</p>
-        <button class="btn active" onclick="filterSelection('low_cost')"> Low cost</button>
-        <button class="btn" onclick="filterSelection('family-friendly')"> Family Friendly</button>
-        <button class="btn" onclick="filterSelection('romantic')"> Romantic</button>
-        <button class="btn" onclick="filterSelection('pets_allowed')"> Pets Allowed</button>
+        <button class="btn active" onclick="filterSelection('low_cost')">
+            <i class='gggg fas fa-money-bill-wave' style='font-size:15px'></i> Low cost
+        </button>
+        <button class="btn" onclick="filterSelection('family-friendly')">
+            <i class="gggg fas fa-child" style='font-size:15px'></i> Family Friendly</button>
+        <button class="btn" onclick="filterSelection('romantic')">
+            <i class="gggg fas fa-heart" style='font-size:15px'></i> Romantic</button>
+        <button class="btn" onclick="filterSelection('pets_allowed')">
+            <i class="gggg fas fa-dog" style='font-size:15px'></i> Pets Allowed</button>
     </section>
 
     <br>
-    <p3>More than 500 accommodations are available in this city</p3>
+    <p3> <i class=" bbbb fas fa-info"></i> More than 500 accommodations are available in this city</p3>
 
 
     <section class="main-section">
         <div class="accommodations">
             <div class="accommodations-title">Accommodations in Marseille</div>
-
+            <a href="">
             <div class="accommodations-section">
                 <picture class="accommodations-image">
                     <source srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -66,7 +72,9 @@
                     <span class="fa fa-star uncheked"></span>
                 </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="accommodations-section">
                 <picture class="accommodations-image">
                     <source srcset="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -84,7 +92,9 @@
                     <span class="fa fa-star checked"></span>
                 </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="accommodations-section">
                 <picture class="accommodations-image">
                     <source srcset="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -102,7 +112,9 @@
                     <span class="fa fa-star uncheked"></span>
                 </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="accommodations-section">
                 <picture class="accommodations-image">
                     <source srcset="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -119,7 +131,9 @@
                         <span class="fa fa-star uncheked"></span>
                     </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="accommodations-section">
                 <picture class="accommodations-image">
                     <source srcset="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -137,7 +151,9 @@
                     <span class="fa fa-star uncheked"></span>
                 </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="accommodations-section">
                 <picture class="accommodations-image">
                     <source srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash"
@@ -156,6 +172,7 @@
                     <span class="fa fa-star checked"></span>
                 </div>
             </div>
+        </a>
 
             <div class="show-more"><a href="">Show more</a></div>
         </div>
@@ -163,7 +180,8 @@
         <div class="most-popular">
             <div class="most-popular-title">Most Popular</div>
 
-            <div class="popular-section" style="grid-row: ;">
+            <a href="">
+            <div class="popular-section" style="grid-row: 2;">
                 <picture class="popular-image">
                     <source srcset="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         media="min-width: 600px">
@@ -183,7 +201,9 @@
                     </div>
                 </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="popular-section">
                 <picture class="popular-image">
                     <source srcset="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -203,7 +223,9 @@
                     </div>
                 </div>
             </div>
+        </a>
 
+            <a href="">
             <div class="popular-section">
                 <picture class="popular-image">
                     <source srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -224,6 +246,7 @@
                     </div>
                 </div>
             </div>
+            </a>
         </div>
 
         </div>
@@ -282,16 +305,16 @@
     <footer>
 
         <section class="footer">
-            <div class="About"> <a href>About</a></div>
-            <div class="our_accommodation"> <a href="">Our Accommodation</a></div>
-            <div class="assistance"> <a href=""> Assistance</a> </div>
-            <div class="Site map"> <a href="">Site map</a></div>
-            <div class="q_assessment"> <a href="">Quality assessment</a></div>
-            <div class="help_desk"> <a href="">Help desk</a></div>
-            <div class="terms_and_conditions"> <a href=""> Gneral Terms and Conditions</a></div>
-            <div class="have_a_hotel"> <a href=""> You have a hotel?</a></div>
-            <div class="contact_us"> <a href=""> Contact us</a></div>
-            <div class="data_and_privacy"> <a href="">Data and privacy</a></div>
+            <div class="footer-bold"> <a href> About</a></div>
+            <div class="footer-bold"> <a href="">Our Accommodation</a></div>
+            <div class="footer-bold"> <a href=""> Assistance</a> </div>
+            <div class="footer-regular"> <a href="">Site map</a></div>
+            <div class="footer-regular"> <a href="">Quality assessment</a></div>
+            <div class="footer-regular"> <a href="">Help desk</a></div>
+            <div class="footer-regular"> <a href=""> Gneral Terms and Conditions</a></div>
+            <div class="footer-regular"> <a href=""> You have a hotel?</a></div>
+            <div class="footer-regular"> <a href=""> Contact us</a></div>
+            <div class="footer-regular"> <a href="">Data and privacy</a></div>
         </section>
     </footer>
 

@@ -25,7 +25,7 @@ body{
 }
 
 a:visited {
-  color: blue;
+  color: black;
 }
 
 a {
@@ -49,7 +49,7 @@ a {
 .accommodations {
   display: grid;
   grid-template: repeat(50px 200px 200px 50px) / repeat(3, 1fr);
-  background-color:#ebedf0;
+  background-color:#f2f2f2;
   border-radius: 25px;
   padding: 10px;
   max-width: inherit;
@@ -72,9 +72,6 @@ a {
   object-fit: cover;
   row-gap: 5px;
 }
-
-
-
 
 
 .accommodations-title{
@@ -125,7 +122,7 @@ a {
 .most-popular{
   display: grid;
   grid-template: 10% 30% 30% 30%  / 1fr;
-  background-color: #ebedf0;
+  background-color: #f2f2f2;
   border-radius: 25px;
   padding: 10px;
   max-width: inherit;
@@ -335,10 +332,13 @@ flex-basis: 33.333333%;
 
 .btn {
   border-radius: 25px;
-  border-color: black;
+  border-color: #f2f2f2;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  font-size: medium;
+  font-weight: 600;
+  box-shadow: white;
 }
 
 .btn:hover {
@@ -354,3 +354,35 @@ flex-basis: 33.333333%;
   color: grey
 }
 
+.gggg{
+  border-radius: inherit;
+  background-color:#DEEBFF;
+  padding: 15px;
+  align-items: left;
+  color: #0065FC;
+}
+
+
+.footer-bold{
+  font-weight: bold;
+}
+
+.bbbb{
+  border-radius: 50%;
+   border-width: thin;  
+   border: solid  #f2f2f2;
+  align-self: center;
+  padding: 15px;
+  align-items: left;
+  color: #0065FC;
+}
+
+#first-line{
+  font-weight: bold;
+  font-size: 120%;
+ 
+}
+
+.button{
+  border-radius: 25%;
+}
