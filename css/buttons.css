@@ -1,0 +1,67 @@
+/* Style the search field */
+form.button input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #f1f1f1;
+    float: left;
+    width: 40%;
+    background: white;
+  }
+  
+  
+  
+  form.button button {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  form.button button:hover {
+    background: #0b7dda;
+  }
+  form.button::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .search-button{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 600px;
+  }
+  
+  .marker-point{
+    font-size: 20px;
+    grid-column: 1;
+    box-sizing: border-box;
+    justify-self: right;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-right: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f2f2f2;
+    height: auto;
+    width: 8%;
+  }
+  
+  .button{
+    grid-column: 2;
+    box-sizing: border-box;
+    justify-self: left;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }

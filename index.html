@@ -2,11 +2,15 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/buttons.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 
 <body>
 
@@ -19,36 +23,33 @@
         <img alt="Logo" src="images/logo/Reservia.svg" width="100" height="50">
     </nav>
 
-    <section>
-        <p1 id="first-line">Find a place for your dream vacation</p1>
-        <br>
-        <p2>Downtown or in nature</p2>
-        <br>
+    <section class="search-section">
+        <div id="first-line">Find a place for your dream vacation</div>
+        <div id="second-line">Downtown or in nature</div>
+        <div class="search-button">
         <span class="fas fa-map-marker-alt marker-point" style="float:left;"></span>
-        <form class="button" action="action_page.php">
+        <form class="button wnw" action="action_page.php">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"> Search </i></button>
         </form>
+    </div>
     </section>
 
-    <br>
-
+ 
     <section class="myBtnContainer">
-        <p>Filters</p>
+        <p id="filter-name">Filters</p>
         <button class="btn active" onclick="filterSelection('low_cost')">
-            <i class='btn-icon fas fa-money-bill-wave' style='font-size:15px'></i> Low cost
+            <i class='btn-icon fas fa-money-bill-wave' ></i> Low cost
         </button>
         <button class="btn" onclick="filterSelection('family-friendly')">
-            <i class="btn-icon fas fa-child" style='font-size:15px'></i> Family Friendly</button>
+            <i class="btn-icon fas fa-child" ></i> Family Friendly</button>
         <button class="btn" onclick="filterSelection('romantic')">
-            <i class="btn-icon fas fa-heart" style='font-size:15px'></i> Romantic</button>
+            <i class="btn-icon fas fa-heart" ></i> Romantic</button>
         <button class="btn" onclick="filterSelection('pets_allowed')">
-            <i class="btn-icon fas fa-dog" style='font-size:15px'></i> Pets Allowed</button>
+            <i class="btn-icon fas fa-dog" ></i> Pets Allowed</button>
     </section>
 
-    <br>
-    <p3> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3>
-
+    <div> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3> </div>
 
     <section class="main-section">
         <div class="accommodations" id="anchor-accomodations">
@@ -63,7 +64,7 @@
                     </picture>
 
                     <div class="accommodations-name">Auberge la Cannebière</div>
-                    <div class="price-info">Night starting at 25€</div>
+                    <div class="price-info">Night starting at <b> 25€</b></div>
                     <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -83,7 +84,7 @@
                             src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
                     </picture>
                     <div class="accommodations-name">Hôtel du port</div>
-                    <div class="price-info">Night starting at 52€</div>
+                    <div class="price-info">Night starting at <b>52€</b></div>
                     <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -104,7 +105,7 @@
                             alt="Les mouettes Hotel">
                     </picture>
                     <div class="accommodations-name">Les mouettes Hotel</div>
-                    <div class="price-info">Night starting at 76€</div>
+                    <div class="price-info">Night starting at <b>76€</b></div>
                     <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -125,7 +126,7 @@
                             alt="Hotel de la mer">
                     </picture>
                     <div class="accommodations-name">Hôtel de la mer</div>
-                    <div class="price-info">Night starting at 46€</div>
+                    <div class="price-info">Night starting at <b> 46€</b></div>
                     <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -146,7 +147,7 @@
                             alt="Auberge Le Panier">
                     </picture>
                     <div class="accommodations-name">Auberge Le Panier</div>
-                    <div class="price-info">Night starting at 23€</div>
+                    <div class="price-info">Night starting at <b>23€</b></div>
                     <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -167,7 +168,7 @@
                             alt="Hotel chez Amina">
                     </picture>
                     <div class="accommodations-name">Hôtel chez Amina</div>
-                    <div class="price-info">Night starting at 96€</div>
+                    <div class="price-info">Night starting at<b> 96€</b></div>
                     <div class="rating">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -182,7 +183,10 @@
         </div>
 
         <div class="most-popular">
-            <div class="most-popular-title">Most Popular</div>
+            <div class="most-popular-title ">
+                <div class="most-popular-text">Most Popular</div>
+                <i class="popular-symbol fas fa-chart-line"></i>
+            </div>
 
             <a href="">
                 <div class="popular-section">
@@ -195,7 +199,7 @@
                     </picture>
                     <div class="popular-text">
                         <div class="popular-name">Morning Sun Hotel</div>
-                        <div>Night starting at 128€</div>
+                        <div>Night starting at <b>128€</b></div>
                         <div class="popular-rating">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -218,7 +222,7 @@
                     </picture>
                     <div class="popular-text">
                         <div class="popular-name">Au coeur de l'eau Bed and breakfast</div>
-                        <div>Night starting at 71€</div>
+                        <div>Night starting at <b>71€</b></div>
                         <div class="popular-rating">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -241,7 +245,7 @@
                     </picture>
                     <div class="popular-text">
                         <div class="popular-name">Tout bleu et Blanc Hotel</div>
-                        <div>Night starting at 68€</div>
+                        <div>Night starting at <b>68€</b></div>
                         <div class="popular-rating">
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
@@ -257,55 +261,97 @@
         </div>
     </section>
 
-    <br>
 
+    <section class="acticities-section" id="anchor-activities">
+        <div class="activities-title"> Activities in Marseile</div>
+        <div class="activities-module">
+            
+            <div class="first-column">
+                <a href="">
+                <picture class="long-picture image-fit-grid">
+                    <source srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        media="min-width: 600px">
+                    <img class="long-picture image-fit-grid"
+                        src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old port">
+                </picture>
+                <div class="activity-name">Old Port</div>
+            </a>
+            </div>
+       
+            <div class="second-column">
+                
+                <div class="medium-long-activity-card">
+                    <a href="">
+                    <picture class="medium-long-picture image-fit-grid">
+                        <source srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="image-fit-grid" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            alt="Pomègues Fort">
+                    </picture>
+                    <div class="activity-name">Pomègues Fort</div>
+                </a>
+                </div>
+             
+                <div class="short-activity-card">
+                    <a href="">
+                    <picture class=" short-activity-picture image-fit-grid">
+                        <source srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="image-fit-grid" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            alt="Frioul Island">
+                    </picture>
+                    <div class="activity-name">Frioul Island</div>
+                </a>
+                </div>
+            
+            </div>
+           
+            <div class="third-column">
+                <a href="">
+                <picture class="long-picture image-fit-grid">
+                    <source srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        media="min-width: 600px">
+                    <img class="long-picture image-fit-grid"
+                        src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        alt="Calanques National Park">
+                </picture>
+                <div class="activity-name">Calanques National Park</div>
+            </a>
+            </div>
+       
 
+            <div class="fourth-column">
+                <div class="medium-activity-card">
+                    <a href="">
+                    <picture class="medium-picture image-fit-grid">
+                        <source srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="half-picture image-fit-grid"
+                            src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Notre-Dame-de-la-Garde">
+                    </picture>
+                    <div class="activity-name">Notre-Dame-de-la-Garde</div>
+                </a>
+                </div>
+           
 
-    <section class="activities" id="anchor-activities">
-        <div class="activities-title">Activities in Marseille</div>
+            
+                <div class="medium-activity-card">
+                    <a href="">
+                    <picture class="medium-picture image-fit-grid">
+                        <source srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="half-picture image-fit-grid"
+                            src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
+                    </picture>
+                    <div class="activity-name">Longchamp Park</div>
+                </a>
+                </div>
+            </div>
 
-        <picture class="long-image first-column image-fit-grid">
-            <!-- <source srcset="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                <source srcset="images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                <source srcset="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"> -->
-            <source srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                media="(min-width: 600px)">
-            <img class="first-column long-image image-fit-grid"
-                src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old port">
-        </picture>
-        <div class="sixth-row first-column bordered-text">Old Port</div>
-
-        <picture class="short-image-top second-column image-fit-grid">
-            <img class="short-image-top second-column image-fit-grid"
-                src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues fort">
-        </picture>
-        <div class="fourth-row second-column bordered-text">Pomègues Fort</div>
-
-        <picture class="very-short-image-bottom second-column image-fit-grid">
-            <img class="very-short-image-bottom second-column image-fit-grid"
-                src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island">
-        </picture>
-        <div class="sixth-row second-column bordered-text">Frioul Island</div>
-
-        <picture class="third-column long-image image-fit-grid">
-            <source srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                media="(min-width: 600px)">
-            <img class="third-column long-image image-fit-grid"
-                src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-        </picture>
-        <div class="sixth-row third-column bordered-text">Calanques National Park</div>
-
-
-        <img class="very-short-image-top fourth-column image-fit-grid"
-            src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-        <div class="third-row fourth-column bordered-text">Notre Dame de la Garde</div>
-
-        <img class="short-image-bottom fourth-column image-fit-grid"
-            src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-        <div class="sixth-row fourth-column bordered-text">Longchamp Park</div>
+        </div>
     </section>
 
-    <br>
 
     <footer>
 
