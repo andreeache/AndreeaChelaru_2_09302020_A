@@ -110,8 +110,8 @@ form.button input[type=text] {
   }
   
   .btn {
-    
     border-color: #f2f2f2;
+    border-style: solid;
     background-color: white;
     cursor: pointer;
     font-size: medium;
@@ -146,5 +146,4 @@ form.button input[type=text] {
     width: 20px;
     border-radius: 50%;
   }
-
  
