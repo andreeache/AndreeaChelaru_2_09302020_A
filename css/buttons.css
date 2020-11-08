@@ -1,11 +1,52 @@
 /* Style the search field */
+
+
+.search-button{
+  display: flex;
+  width: 25vw;
+  border-radius: 25px;
+  /* border: solid #f2f2f2; */
+}
+
+@media only screen and (max-width: 680px){
+  .search-button{
+    width: 90vw;
+  }
+}
+
+
+.marker-point{
+  font-size: 20px;
+  box-sizing: border-box;
+  justify-self: right;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+.button{
+  display: flex;
+  justify-self: left;
+  width: 100%;
+}
+
+@media only screen and (max-width: 680px){
+  .button{
+    width: 90vw;
+  }
+}
+
 form.button input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid #f1f1f1;
     float: left;
-    width: 40%;
+    width: 75%;
     background: white;
+    
   }
   
   
@@ -17,7 +58,7 @@ form.button input[type=text] {
     background: #2196F3;
     color: white;
     font-size: 17px;
-    border: 1px solid grey;
+    border: 1px solid #F2F2F2;
     border-left: none; 
     cursor: pointer;
     border-top-right-radius: 10px;
@@ -32,36 +73,78 @@ form.button input[type=text] {
     clear: both;
     display: table;
   }
+
+  @media only screen and (max-width: 680px){
+    .button-desktop {
+    display: none;
+  }
+}
+
+  .button-mobile{
+    display: none;
+  }
+  @media only screen and (max-width: 680px){
+    .button-mobile {
+      display: inline;
+    }
+  }
   
+  /* Style the filter section */
+  .myBtnContainer{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 68%;
+  }
+
+  @media only screen and (max-width: 680px){
+    .myBtnContainer{
+      display: grid;
+    }
+  }
   
-  .search-button{
-    display: flex;
-    justify-content: left;
+  #filter-name{
+    padding-right: 10px;
+  }
+  
+  .btn {
+    
+    border-color: #f2f2f2;
+    background-color: white;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 40px;
+    border-radius: 50px;
+    height: 50px;
+  }
+
+  @media only screen and (max-width: 680px){
+    .btn{
+      margin-bottom: 10px;
+    }
+  }
+  
+  .btn:hover {
+    background-color:cornflowerblue;
+  }
+  
+  .btn-icon{
+    border-radius: inherit;
+    background-color:#DEEBFF;
+    padding: 15px;
     align-items: left;
-    border-radius: 25px;
-    box-sizing: border-box;
-    width: 600px;
+    color: #0065FC;
+    float: left;
+    margin: 0 10px 0 -29px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
   }
-  
-  .marker-point{
-    font-size: 20px;
-    grid-column: 1;
-    box-sizing: border-box;
-    justify-self: right;
-    padding-top: 14px;
-    padding-left: 16px;
-    padding-right: 5px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: #f2f2f2;
-    height: auto;
-    width: 8%;
-  }
-  
-  .button{
-    grid-column: 2;
-    box-sizing: border-box;
-    justify-self: left;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-  }
+
+ 

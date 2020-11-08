@@ -3,53 +3,63 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/buttons.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 
 <body>
 
-    <nav>
-        <div class="navmenu">
-            <a href="#anchor-accomodations">Accommodation </a>
-            <a href="#anchor-activities">Activities</a>
-            <a href>Sign up</a>
+    <nav class="nav">
+        <div class="navbar">
+            <div class="logo"><img alt="Logo" src="images/logo/Reservia.svg"></div>
+            <div class="sign-up"><a href>Sign up</a></div>
         </div>
-        <img alt="Logo" src="images/logo/Reservia.svg" width="100" height="50">
+        <div class="navmenu">
+            <ul>
+                <li class="accommodation-header" style="color: #0065FC" ;> <a
+                        href="#anchor-accomodations">Accommodations </a></li>
+                <li class="activities-header"><a href="#anchor-activities">Activities</a></li>
+                <li class="sign-up"><a href>Sign up</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section class="search-section">
-        <div id="first-line">Find a place for your dream vacation</div>
-        <div id="second-line">Downtown or in nature</div>
+
+    <section>
+        <div class="first-line">Find a place for your dream vacation</div>
+        <div class="second-line">Downtown or in nature</div>
         <div class="search-button">
-        <span class="fas fa-map-marker-alt marker-point" style="float:left;"></span>
-        <form class="button wnw" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"> Search </i></button>
-        </form>
-    </div>
+            <div class="fas fa-map-marker-alt marker-point"></div>
+            <form class="button" action="action_page.php">
+                <input type="text" placeholder="Search.." name="search" value="Marseille, France">
+                <button class="button-desktop" type="submit" disabled>Search</button>
+                <button class="button-mobile" type="submit" disabled><span class="fa fa-search"></span></button>
+            </form>
+        </div>
     </section>
 
- 
+
     <section class="myBtnContainer">
         <p id="filter-name">Filters</p>
         <button class="btn active" onclick="filterSelection('low_cost')">
-            <i class='btn-icon fas fa-money-bill-wave' ></i> Low cost
+            <i class='btn-icon fas fa-money-bill-wave'></i> Low cost
         </button>
         <button class="btn" onclick="filterSelection('family-friendly')">
-            <i class="btn-icon fas fa-child" ></i> Family Friendly</button>
+            <i class="btn-icon fas fa-child"></i> Family Friendly</button>
         <button class="btn" onclick="filterSelection('romantic')">
-            <i class="btn-icon fas fa-heart" ></i> Romantic</button>
+            <i class="btn-icon fas fa-heart"></i> Romantic</button>
         <button class="btn" onclick="filterSelection('pets_allowed')">
-            <i class="btn-icon fas fa-dog" ></i> Pets Allowed</button>
+            <i class="btn-icon fas fa-dog"></i> Pets Allowed</button>
     </section>
 
-    <div> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3> </div>
+    <div> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3>
+    </div>
 
     <section class="main-section">
         <div class="accommodations" id="anchor-accomodations">
@@ -197,6 +207,7 @@
                             src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                             alt="Morning Sun Hotel">
                     </picture>
+
                     <div class="popular-text">
                         <div class="popular-name">Morning Sun Hotel</div>
                         <div>Night starting at <b>128€</b></div>
@@ -262,90 +273,93 @@
     </section>
 
 
-    <section class="acticities-section" id="anchor-activities">
-        <div class="activities-title"> Activities in Marseile</div>
+    <section class="activities-section" id="anchor-activities">
+        <div class="activities-title"> Activities in Marseille</div>
         <div class="activities-module">
-            
+
             <div class="first-column">
                 <a href="">
-                <picture class="long-picture image-fit-grid">
-                    <source srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="long-picture image-fit-grid"
-                        src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old port">
-                </picture>
-                <div class="activity-name">Old Port</div>
-            </a>
+                    <picture class="long-picture image-fit-grid">
+                        <source srcset="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="long-picture image-fit-grid"
+                            src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old port">
+                    </picture>
+                    <div class="activity-name">Old Port</div>
+                </a>
             </div>
-       
+
             <div class="second-column">
-                
+
                 <div class="medium-long-activity-card">
                     <a href="">
-                    <picture class="medium-long-picture image-fit-grid">
-                        <source srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            media="min-width: 600px">
-                        <img class="image-fit-grid" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Pomègues Fort">
-                    </picture>
-                    <div class="activity-name">Pomègues Fort</div>
-                </a>
+                        <picture class="medium-long-picture image-fit-grid">
+                            <source srcset="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                media="min-width: 600px">
+                            <img class="medium-long-picture image-fit-grid"
+                                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="Pomègues Fort">
+                        </picture>
+                        <div class="activity-name">Pomègues Fort</div>
+                    </a>
                 </div>
-             
+
                 <div class="short-activity-card">
                     <a href="">
-                    <picture class=" short-activity-picture image-fit-grid">
-                        <source srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            media="min-width: 600px">
-                        <img class="image-fit-grid" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Frioul Island">
-                    </picture>
-                    <div class="activity-name">Frioul Island</div>
-                </a>
+                        <picture class="short-activity-picture image-fit-grid">
+                            <source srcset="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                media="min-width: 600px">
+                            <img class="short-activity-picture image-fit-grid"
+                                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="Frioul Island">
+                        </picture>
+                        <div class="activity-name">Frioul Island</div>
+                    </a>
                 </div>
-            
+
             </div>
-           
+
             <div class="third-column">
                 <a href="">
-                <picture class="long-picture image-fit-grid">
-                    <source srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        media="min-width: 600px">
-                    <img class="long-picture image-fit-grid"
-                        src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Calanques National Park">
-                </picture>
-                <div class="activity-name">Calanques National Park</div>
-            </a>
+                    <picture class="long-picture image-fit-grid">
+                        <source srcset="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            media="min-width: 600px">
+                        <img class="long-picture image-fit-grid"
+                            src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Calanques National Park">
+                    </picture>
+                    <div class="activity-name">Calanques National Park</div>
+                </a>
             </div>
-       
+
 
             <div class="fourth-column">
                 <div class="medium-activity-card">
                     <a href="">
-                    <picture class="medium-picture image-fit-grid">
-                        <source srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            media="min-width: 600px">
-                        <img class="half-picture image-fit-grid"
-                            src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Notre-Dame-de-la-Garde">
-                    </picture>
-                    <div class="activity-name">Notre-Dame-de-la-Garde</div>
-                </a>
+                        <picture class="medium-picture image-fit-grid">
+                            <source srcset="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                media="min-width: 600px">
+                            <img class="medium-picture image-fit-grid"
+                                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="Notre-Dame-de-la-Garde">
+                        </picture>
+                        <div class="activity-name">Notre-Dame-de-la-Garde</div>
+                    </a>
                 </div>
-           
 
-            
+
+
                 <div class="medium-activity-card">
                     <a href="">
-                    <picture class="medium-picture image-fit-grid">
-                        <source srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                            media="min-width: 600px">
-                        <img class="half-picture image-fit-grid"
-                            src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp Park">
-                    </picture>
-                    <div class="activity-name">Longchamp Park</div>
-                </a>
+                        <picture class="medium-picture image-fit-grid">
+                            <source srcset="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                media="min-width: 600px">
+                            <img class="medium-picture image-fit-grid"
+                                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="Longchamp Park">
+                        </picture>
+                        <div class="activity-name">Longchamp Park</div>
+                    </a>
                 </div>
             </div>
 
