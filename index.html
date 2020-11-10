@@ -46,16 +46,22 @@
 
 
     <section class="myBtnContainer">
+        
         <p id="filter-name">Filters</p>
-        <button class="btn active" onclick="filterSelection('low_cost')">
+       
+        <button id="low-cost" class="btn active" onclick="filterSelection('low_cost')">
             <span class="btn-icon fas fa-money-bill-wave"></span>Low cost
         </button>
-        <button class="btn" onclick="filterSelection('family-friendly')">
-            <span class="btn-icon fas fa-child"></span>Family Friendly</button>
-        <button class="btn" onclick="filterSelection('romantic')">
-            <span class="btn-icon fas fa-heart"></span>Romantic</button>
-        <button class="btn" onclick="filterSelection('pets_allowed')">
-            <span class="btn-icon fas fa-dog"></span>Pets Allowed</button>
+        <button id="family-friendly" class="btn" onclick="filterSelection('family-friendly')">
+            <span class="btn-icon fas fa-child"></span>Family-friendly
+        </button>
+        <button id="romantic" class="btn" onclick="filterSelection('romantic')">
+            <span class="btn-icon fas fa-heart"></span>Romantic
+        </button>
+        <button id="pets-allowed" class="btn" onclick="filterSelection('pets_allowed')">
+            <span class="btn-icon fas fa-dog"></span>Pets Allowed
+        </button>
+    
     </section>
 
     <div> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3>
@@ -368,7 +374,6 @@
 
 
     <footer>
-
         <section class="footer">
             <div class="footer-bold"> <a href> About</a></div>
             <div class="footer-bold"> <a href="#anchor-accomodations">Our Accommodation</a></div>

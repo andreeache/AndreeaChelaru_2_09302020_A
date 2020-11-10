@@ -97,17 +97,46 @@ form.button input[type=text] {
     margin-bottom: 20px;
     margin-top: 30px;
     width: 68%;
+   
   }
 
   @media only screen and (max-width: 680px){
     .myBtnContainer{
-      display: grid;
+      display: flex;
+      width: 100%;
     }
   }
+
+   
   
   #filter-name{
-    padding-right: 10px;
+    font-weight: bold;
+   
   }
+
+  @media only screen and (max-width: 680px){
+    #filter-name {
+      width: 70%;
+    }
+  }
+
+
+  @media only screen and (max-width: 680px){
+    #low-cost{
+      order: 1;
+    }
+    #family-friendly{
+      order: 3;
+    }
+    #romantic{
+      order: 1;
+    }
+    #pets-allowed{
+      order: 4;
+    }
+
+  }
+  
   
   .btn {
     border-color: #f2f2f2;
