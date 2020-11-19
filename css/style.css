@@ -1,11 +1,10 @@
 
 body{
-  margin-top: 2vh;
-  padding-right: 2vw;
-  margin-bottom: auto;
-  padding-left: 2vw;
+  margin: 0;
+  padding: 0;
   font-family: Raleway;
 }
+
 @media only screen and (max-width: 680px) {
   body{
     width: auto;
@@ -16,7 +15,10 @@ body{
   }
 }
 
-
+#main-content {
+  max-width: 1340px;
+  margin: 0 auto;
+}
 
 .nav {
   margin-bottom: 40px;
@@ -188,17 +190,11 @@ a {
 .main-section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding-top: 1vh;
-  column-gap: 3vw;
-  max-width: inherit;
-  max-height: inherit;
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  margin-bottom: 6vh;
-  margin-top: 1vh;
-  margin-right: 3vw;
-  padding-right: 10vw;
+  padding: 0;
+  column-gap: 40px;
+  height: 620px;
+  margin-bottom: 60px;
+  margin-top: 18px;
 }
 
 @media only screen and (max-width: 680px){
@@ -220,19 +216,17 @@ a {
 
 .accommodations {
   display: grid;
-  grid-template: repeat(50% 200% 200% 50%) / repeat(3, 1fr);
+  grid-template: repeat(20px 195px 195px 20px) / repeat(3, 1fr);
   background-color:#f2f2f2;
   border-radius: 25px;
-  padding: 10px;
+  padding: 45px 35px;
   /* max-width: inherit;
   max-height: inherit;
   width: inherit;
   height: inherit;
   object-fit: cover; */
-  row-gap: 3vh;
-  column-gap: 1.5vw;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
+  row-gap: 22px;
+  column-gap: 30px;
 }
 
 
@@ -267,18 +261,10 @@ a {
 
 
 .accommodations-section{
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 4;
   background-color: white;
   border-radius: 25px;
   padding: 4px;
-  height: 31vh;
-  width: 18vw;
-  object-fit: cover;
-  row-gap: 5px;
-  padding-left: 5px;
-  padding-bottom: 3px;
+  height: 195px;
 }
 
 @media only screen and (min-width: 680px) and (max-width: 1024px) {
@@ -324,11 +310,8 @@ a {
 
 
 .accommodations-image{
-  grid-row: 1;
-  max-width: inherit;
-  max-height: inherit;
-  width: inherit;
-  height: 18vh;
+  height: 115px;
+  width: 100%;
   object-fit: cover;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
@@ -753,16 +736,18 @@ a {
     height: 100%;
 }
 
-
+footer {
+  background: #f1f1f1;
+  width: 100%;
+}
 .footer{
+  max-width: 1340px;
+  margin: 0 auto;
   display: flex;
   padding-top: 30px;
   flex-wrap: wrap;
-  background: #f1f1f1;
   padding-left: 50px;
   margin-top: 40px;
-  margin-left: -3.5vw;
-  margin-right: -3.5vw;
 }
 
 
