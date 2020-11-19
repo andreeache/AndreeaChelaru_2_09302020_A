@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/buttons.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -24,7 +25,7 @@
             <ul>
                 <li class="accommodation-header" style="color: #0065FC" ;> <a
                         href="#anchor-accomodations">Accommodations </a></li>
-                <li class="activities-header"><a href="#anchor-activities">Activities</a></li>
+                <li class="activities-header" style="color: black;"><a href="#anchor-activities">Activities</a></li>
                 <li class="sign-up"><a href>Sign up</a></li>
             </ul>
         </div>
@@ -46,9 +47,9 @@
 
 
     <section class="myBtnContainer">
-        
+
         <p id="filter-name">Filters</p>
-       
+
         <button id="low-cost" class="btn active" onclick="filterSelection('low_cost')">
             <span class="btn-icon fas fa-money-bill-wave"></span>Low cost
         </button>
@@ -61,7 +62,7 @@
         <button id="pets-allowed" class="btn" onclick="filterSelection('pets_allowed')">
             <span class="btn-icon fas fa-dog"></span>Pets Allowed
         </button>
-    
+
     </section>
 
     <div> <i class="info-icon fas fa-info"></i> More than 500 accommodations are available in this city</p3>
@@ -76,11 +77,12 @@
                         <source srcset="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                             media="(max-width: 680px)">
                         <source srcset="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                            media="(max-width: 1024px"> 
+                            media="(max-width: 1024px">
                         <source srcset="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                            media="(max-width: 1600px">   
+                            media="(max-width: 1600px">
                         <img class="accommodations-image"
-                            src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=Hotel Cannebiere>
+                            src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt=Hotel
+                            Cannebiere>
                     </picture>
 
                     <div class="accommodations-name">Auberge la Cannebière</div>
@@ -197,8 +199,7 @@
             <a href="">
                 <div class="accommodations-section">
                     <picture class="accommodations-image">
-                        <source srcset="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash"
-                            media="(max-width: 680px)">
+                        <source src="images/hebergements/4_small/" media="(max-width: 680px)">
                         <source srcset="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                             media="(max-width: 1024px)">
                         <source srcset="images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -285,9 +286,9 @@
 
             <a href="">
                 <div class="popular-section">
-                    <picture class="popular-image">
+                    <picture class="popular-image" >
                         <source srcset="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            media="(max-width: 600px)">
+                            media="(max-width: 680px)">
                         <source srcset="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                             media="(max-width: 1024px)">
                         <source srcset="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -311,7 +312,6 @@
             </a>
         </div>
 
-        </div>
     </section>
 
 
@@ -436,7 +436,7 @@
     <footer>
         <section class="footer">
             <div class="footer-bold"> <a href> About</a></div>
-            <div class="footer-bold"> <a href="#anchor-accomodations">Our Accommodation</a></div>
+            <div class="footer-bold" style="color: black;"> <a href="#anchor-accomodations">Our Accommodation</a></div>
             <div class="footer-bold"> <a href=""> Assistance</a> </div>
             <div class="footer-regular"> <a href="">Site map</a></div>
             <div class="footer-regular"> <a href="">Quality assessment</a></div>
