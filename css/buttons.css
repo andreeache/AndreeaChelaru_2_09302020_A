@@ -3,14 +3,18 @@
 
 .search-button{
   display: flex;
-  width: 25vw;
+  width: 380px;
   border-radius: 25px;
-  /* border: solid #f2f2f2; */
+
 }
 
 @media only screen and (max-width: 680px){
   .search-button{
-    width: 90vw;
+    width: 90%;
+    padding-left: 20px;
+    padding-left: 20px;
+    border: 10px;
+    border-radius: 10px;
   }
 }
 
@@ -18,13 +22,26 @@
   font-size: 20px;
   box-sizing: border-box;
   justify-self: right;
-  padding-top: 10px;
-  padding-left: 16px;
-  padding-right: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding-top: 16px;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   background-color: #f2f2f2;
+  height: 55px;
+  width: 55px;
 }
+
+@media only screen and (max-width: 680px){
+  .marker-point{
+    height: 50px;
+    min-width: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 16px;
+    }
+}
+
+
 
 .button{
   display: flex;
@@ -34,7 +51,7 @@
 
 @media only screen and (max-width: 680px){
   .button{
-    width: 90vw;
+    width: 90%;
   }
 }
 
@@ -43,10 +60,16 @@ form.button input[type=text] {
     font-size: 17px;
     border: 1px solid #f1f1f1;
     float: left;
-    width: 75%;
+    width: 200px;
     background: white;
   }
   
+@media only screen and (max-width: 680px){
+  form.button input[type=text] {
+    width: 90%;
+  }
+}
+
   form.button button {
     float: left;
     width: 25%;
@@ -57,8 +80,15 @@ form.button input[type=text] {
     border: 1px solid #F2F2F2;
     border-left: none; 
     cursor: pointer;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100px;
+  }
+
+  @media only screen and (max-width:680px){
+    form.button button{
+      border-radius: 10px;
+    }
   }
   
   form.button button:hover {
@@ -82,6 +112,10 @@ form.button input[type=text] {
   @media only screen and (max-width: 680px){
     .button-mobile {
       display: inline;
+      width: 50px;
+      max-width: 50px;
+      height: 50px;
+      border-radius: 10px;
     }
   }
   
@@ -92,13 +126,16 @@ form.button input[type=text] {
     justify-content: space-between;  
     margin-bottom: 20px;
     margin-top: 30px;
+    padding-left: 15px;
     width: 68%;
+    min-width: 330px;
   }
 
   @media only screen and (max-width: 680px){
     .myBtnContainer{
-      display: flex;
-      width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+    
     }
   }
 
@@ -108,7 +145,7 @@ form.button input[type=text] {
 
   @media only screen and (max-width: 680px){
     #filter-name {
-      width: 70%;
+      width: 80%;
     }
   }
 
@@ -167,3 +204,4 @@ form.button input[type=text] {
     border-radius: 50%;
   }
  
+  
