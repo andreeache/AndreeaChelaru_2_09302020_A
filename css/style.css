@@ -1,7 +1,8 @@
 
 body{
   margin: 0;
-  padding: 0;
+  padding-top: 50px;
+  padding: 10px;
   font-family: Raleway;
 }
 
@@ -378,6 +379,10 @@ a {
   }
 }
 
+.show-more{
+  font-weight: bold;
+}
+
 @media only scren and (max-width: 680px){
   .show-more{
     padding: 20px;
@@ -402,8 +407,6 @@ a {
     padding:  1px;
     padding-right: 10px;
     padding-left: 10px;
-    overflow: hidden;
-    align-self: center;
     min-width: 300px;
     padding-bottom: 30px;   
     border-radius: 0px; 
@@ -472,7 +475,6 @@ a {
   width: 127px;
   height: inherit;
   object-fit: cover;
-  padding-right: 10px;  
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
   float: left;
@@ -555,10 +557,10 @@ a {
    flex-wrap: wrap;
    flex-direction: column;
    height: inherit;
-   padding: 20px;
+   padding: 10px;
    row-gap: 1px;
    margin-bottom: 50px;
-   width: 100%;
+   /* width: 100%; */
   }
 }
 
@@ -645,7 +647,7 @@ a {
   .first-column{
     grid-template-rows: 135px 55px;
     height: 190px;
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -670,7 +672,7 @@ a {
   .second-column{
     grid-template-rows: 190px 190px;
     row-gap: 25px;
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -734,7 +736,7 @@ a {
   .third-column{
     grid-template-rows: 135px 55px;
     height: 190px;
-    width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
     
   }
@@ -749,7 +751,7 @@ a {
 .fourth-column{
   display: grid;
   row-gap: 40px;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 205px 205px;
   max-width: 300px;
   min-width: 100px;
 
@@ -758,7 +760,7 @@ a {
 @media only screen and (max-width: 680px){
 .fourth-column{
   row-gap: 20px;
-  max-width: 90%;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 }
