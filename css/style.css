@@ -1,7 +1,6 @@
 
 body{
   margin: 0;
-  padding-top: 50px;
   padding: 10px;
   font-family: Raleway;
 }
@@ -30,6 +29,7 @@ body{
 
 
 .nav {
+  margin-top: 30px;
   margin-bottom: 40px;
   padding-right: 40px;
 }
@@ -294,6 +294,7 @@ a {
 
 .accommodations-section{
   background-color: white;
+  box-shadow: 5px 5px 5px #e2e2e2;
   border-radius: 25px;
   padding: 4px;
   height: 200px;
@@ -462,6 +463,7 @@ a {
 @media only screen and (min-width: 680px) and (max-width: 1024px){
   
   .popular-section{
+  grid-template-columns: 130px 450px;
   padding-bottom: 10px;
   column-gap: 20px;
   margin-bottom: 2vh;
@@ -505,9 +507,13 @@ a {
   }
 }
 
-@media only screen and (max-width: 680px) and (orientation: landscape){
+
+
+@media only screen and (min-width: 680px) and (max-width: 1024px){
   .popular-text{
-    row-gap: 2px;
+    padding-left: 1px;
+    margin-left: 1px;
+   
   }
 }
 

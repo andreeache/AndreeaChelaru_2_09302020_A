@@ -189,6 +189,15 @@ form.button input[type=text] {
       margin-left: 10px;
     }
   }
+
+  @media only screen and (min-width: 680px) 
+  and (max-width: 1024px){
+    .btn{
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+  }
+
   
   .btn:hover {
     background-color:cornflowerblue;
